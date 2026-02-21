@@ -28,12 +28,12 @@ Setting up local environment is extremely easy and straight forward. Follow the 
 
 
 ```bash
-  git clone -b development https://github.com/Cyber-Square-Pro/cs-plane-api.git
+  git clone -b development https://github.com/Cyber-Square-Pro/cspro-plane-api.git
 
 ```
 2. Switch to project folder using:
 ```bash
-  cd cs-plane-api
+  cd cspro-plane-api
 
 ```
 3. Create and activate Virtuale Environment:  
@@ -54,7 +54,6 @@ On Linux/Mac
    cd plane_env/scripts
    source activate
 ```
-
     
 4. Install packages from requirements.txt
 
