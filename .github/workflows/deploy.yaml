@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - development 
+      - main 
 
 jobs:
   deploy:
@@ -39,6 +39,6 @@ jobs:
             eval $(ssh-agent -s)
             ssh-add ~/.ssh/id_ed25519 <<< "${{secrets.SSH_PASS_PHRASE }}"
             git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519"
-            cd /home/ubuntu/PLANE/PLANE-DEV/cs-plane-api
-            git pull origin development  # Assuming you're pushing to the 'main' branch
+            cd /home/ubuntu/PROJECT/cspro-plane-api
+            git pull origin main  # Assuming you're pushing to the 'main' branch
             sudo systemctl restart gunicorn  # Restart Gunicorn or whatever your WSGI server is
