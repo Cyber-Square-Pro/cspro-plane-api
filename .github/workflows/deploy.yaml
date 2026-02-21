@@ -8,38 +8,53 @@ on:
 
 jobs:
   deploy:
+    # Only run if the PR was actually merged (not just closed)
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4 # Updated to v4 for speed/security
 
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5 # Updated to v5
         with:
-          python-version: '3.x'  # Specify your Python version here
+          python-version: '3.12'  # Fixed to a stable version
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install psycopg2-binary
-          pip install -r requirements.txt  # Assuming you have a requirements.txt file
+          pip install -r requirements.txt
 
-      - name: Run migrations
+      - name: Run migrations (Optional)
+        # Note: This runs on the GitHub Runner. Ensure secrets.DATABASE_URL or similar is set 
+        # if your migrations need to talk to the DB during build.
         run: python manage.py migrate
+        env:
+          # You might need DB env vars here if migrate connects to the RDS/EC2 DB
+          DEBUG: "False"
 
       - name: SSH into EC2 instance and deploy
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.EC2_HOST }}  # Your EC2 instance host/IP
-          username: ${{ secrets.EC2_USERNAME }}  # SSH username for EC2
-          key: ${{ secrets.EC2_SSH_KEY }}  # SSH private key for authentication
-        
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            chmod 600 ~/.ssh/id_ed25519
-            eval $(ssh-agent -s)
-            ssh-add ~/.ssh/id_ed25519 <<< "${{secrets.SSH_PASS_PHRASE }}"
-            git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519"
+            # 1. Navigate to project
             cd /home/ubuntu/PROJECT/cspro-plane-api
-            git pull origin main  # Assuming you're pushing to the 'main' branch
-            sudo systemctl restart gunicorn  # Restart Gunicorn or whatever your WSGI server is
+            
+            # 2. Pull latest code
+            git pull origin main
+            
+            # 3. Update virtual environment
+            source /home/ubuntu/PROJECT/plane_env/bin/activate
+            pip install -r requirements.txt
+            python manage.py migrate
+            python manage.py collectstatic --noinput
+            
+            # 4. Restart Services
+            # Note: Ensure this matches the service name we fixed earlier
+            sudo systemctl restart plane_granthium
+            sudo systemctl restart nginx
