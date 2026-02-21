@@ -26,17 +26,11 @@ Setting up local environment is extremely easy and straight forward. Follow the 
 
 1. Clone the code locally using:
 
-
 ```bash
-  git clone -b development https://github.com/Cyber-Square-Pro/cspro-plane-api.git
-
+  git clone -b main https://github.com/Cyber-Square-Pro/cspro-plane-api.git
 ```
-2. Switch to project folder using:
-```bash
-  cd cspro-plane-api
 
-```
-3. Create and activate Virtuale Environment:  
+2. Create and activate Virtuale Environment:  
    Create:   
 ```bash
     python -m venv plane_env
@@ -54,17 +48,22 @@ On Linux/Mac
    cd plane_env/scripts
    source activate
 ```
-    
-4. Install packages from requirements.txt
 
+3. Switch to project folder using:
 ```bash
-   pip install -r requirements.txt
+  cd ../../cspro-plane-api
 ```
 
-5. Install psycopg2 library.
+4. Install psycopg2 library.
 
 ```bash
    pip install psycopg2
+```
+
+5. Install packages from requirements.txt
+
+```bash
+   pip install -r requirements.txt
 ```
 
 6. Run migrations.
@@ -79,9 +78,9 @@ On Linux/Mac
   python manage.py runserver
 ```
 
-9. Open http://localhost:8000 with your browser to see the application.
+8. Open http://localhost:8000 with your browser to see the application.
 
-10. You can test your API using Postman.
+9. You can test your API using Postman.
 
 ## Testing endpoints using Postman
 
