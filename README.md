@@ -60,6 +60,12 @@ On Linux/Mac
    pip install psycopg2
 ```
 
+If the above command fails to execute
+
+```bash
+   pip install psycopg2-binary
+```
+
 5. Install packages from requirements.txt
 
 ```bash

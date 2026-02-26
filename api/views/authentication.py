@@ -96,8 +96,8 @@ class SignInEndPoint(APIView):
         if user is None:
             return Response(
                 {
-                    'message': 'Sorry, user not found. Please try again.',
-                    'statusCode':  404
+                    'message': 'Invalid Credentials',
+                    'statusCode':  401
                 },
 
             )
