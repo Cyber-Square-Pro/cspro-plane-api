@@ -47,8 +47,7 @@ Activate:
 On Linux/Mac
 
 ```bash
-   cd plane_env/scripts
-   source activate
+   source plane_env/bin/activate
 ```
 
 3. Switch to project folder using:
