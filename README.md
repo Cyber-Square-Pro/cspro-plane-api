@@ -1,6 +1,7 @@
 # University of Belize - CI/CD Cohort
 
-#Plane App API
+# Plane App API | University of Belize
+
 **What is CS Pro Plane App?**
 
 CS Pro Plane is a versatile and comprehensive project management software built for teams that prioritize delivering exceptional customer
