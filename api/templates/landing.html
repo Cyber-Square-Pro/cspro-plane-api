@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane API Landing Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 48px 32px;
+            max-width: 480px;
+            text-align: center;
+        }
+        h1 {
+            color: #2d3a4b;
+            margin-bottom: 16px;
+        }
+        p {
+            color: #4a5a6a;
+            margin-bottom: 32px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 0 8px;
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .links a:hover {
+            color: #0d47a1;
+        }
+        .logo {
+            width: 64px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/static/plane_logo.png" alt="Plane Logo" class="logo" onerror="this.style.display='none'">
+        <h1>Welcome to Plane API</h1>
+        <p>Your backend for project, workspace, and team management.<br>Explore the API endpoints or visit the documentation below.</p>
+        <div class="links">
+            <a href="/swagger/">API Docs</a>
+            <a href="/admin/">Admin</a>
+            <a href="https://github.com/Cyber-Square-Pro/cspro-plane-api.git" target="_blank">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
