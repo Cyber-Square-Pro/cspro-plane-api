@@ -30,7 +30,7 @@ Setting up local environment is extremely easy and straight forward. Follow the 
   git clone -b main https://github.com/Cyber-Square-Pro/cspro-plane-api.git
 ```
 
-2. Create and activate Virtuale Environment:  
+2. Create and activate Virtual Environment:  
    Create:
 
 ```bash
