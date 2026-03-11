@@ -1,6 +1,6 @@
 # University of Belize - CI/CD Cohort
 
-# Plane App API | University of Belize
+# CS Pro Plane - Project Management Platform
 
 **What is CS Pro Plane App?**
 
@@ -19,6 +19,7 @@ outstanding results.
 - Modules: Break down your large projects into smaller, more manageable modules. Assign modules between teams to track and plan your project's progress easily.
 - Analytics: Get insights into all your CS Pro Plane data in real-time. Visualize issue data to spot trends, remove blockers, and progress your work.
 - Time tracking (coming soon): CS Pro Plane also includes a powerful time tracking feature, allowing teams to monitor the time spent on tasks and projects accurately.
+- Dark Mode (coming soon): Switch between light and dark themes for improved accessibility and user comfort.
 
 ## Installation
 
