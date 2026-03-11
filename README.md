@@ -37,11 +37,22 @@ Setting up local environment is extremely easy and straight forward. Follow the 
     python -m venv plane_env
 ```
 
+If this generates an error, try
+```cmd/powershell
+   py -m venv plane_env"
+```
+
 Activate:  
  On Windows,
 
 ```bash
    cd plane_env/scripts
+```
+
+|OR|
+
+```cmd/powershell
+   plane_env\Scripts\activate
 ```
 
 On Linux/Mac
