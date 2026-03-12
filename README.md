@@ -1,7 +1,6 @@
 # University of Belize - CI/CD Cohort
 
-# Plane App API | University of Belize
-
+#Plane App API
 **What is CS Pro Plane App?**
 
 CS Pro Plane is a versatile and comprehensive project management software built for teams that prioritize delivering exceptional customer
@@ -31,7 +30,7 @@ Setting up local environment is extremely easy and straight forward. Follow the 
   git clone -b main https://github.com/Cyber-Square-Pro/cspro-plane-api.git
 ```
 
-2. Create and activate Virtuale Environment:  
+2. Create and activate Virtual Environment:  
    Create:
 
 ```bash
@@ -97,10 +96,11 @@ If the above command fails to execute
 Signup: http://127.0.0.1:8000/api/user/sign-up/
 ![a8714280-0b7d-4ac2-8bf6-8366f1d397d3](https://github.com/user-attachments/assets/5d6eccad-f1aa-42df-bffa-f74a37d0830b)
 
-## University of Belize Training Program
 
-This project reflects the University of Belize's commitment to building practical, industry-ready software skills through collaborative development, modern DevOps practices, and real-world API engineering experience.
+## University of Belize
 
-- Supports hands-on learning in backend development and CI/CD workflows.
-- Encourages teamwork, code quality, and professional project standards.
-- Helps students gain experience with tools used in real production environments.
+This project is developed for the University of Belize:
+- Built for students in Software Engineering (CMPS4131)
+- Focuses on project management and team collaboration
+- Part of the Computer Science program
+
