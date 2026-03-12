@@ -18,6 +18,7 @@ outstanding results.
 - Modules: Break down your large projects into smaller, more manageable modules. Assign modules between teams to track and plan your project's progress easily.
 - Analytics: Get insights into all your CS Pro Plane data in real-time. Visualize issue data to spot trends, remove blockers, and progress your work.
 - Time tracking (coming soon): CS Pro Plane also includes a powerful time tracking feature, allowing teams to monitor the time spent on tasks and projects accurately.
+- Notifications (coming soon): Receive alerts for issue updates, sprint changes, and important project activity.
 
 ## Installation
 
@@ -95,9 +96,11 @@ If the above command fails to execute
 Signup: http://127.0.0.1:8000/api/user/sign-up/
 ![a8714280-0b7d-4ac2-8bf6-8366f1d397d3](https://github.com/user-attachments/assets/5d6eccad-f1aa-42df-bffa-f74a37d0830b)
 
+
 ## University of Belize
 
 This project is developed for the University of Belize:
 - Built for students in Software Engineering (CMPS4131)
 - Focuses on project management and team collaboration
 - Part of the Computer Science program
+
