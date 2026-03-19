@@ -93,3 +93,4 @@ If the above command fails to execute
 Signup:  http://127.0.0.1:8000/api/user/sign-up/
 ![a8714280-0b7d-4ac2-8bf6-8366f1d397d3](https://github.com/user-attachments/assets/5d6eccad-f1aa-42df-bffa-f74a37d0830b)
 
+**SMALL CHANGES TO VIEW THE CI Pipeline Run
