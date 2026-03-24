@@ -5,6 +5,7 @@ import sys
 
 
 def main():
+    print("Initializing API...")
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Plane.settings')
     try:
