@@ -20,7 +20,7 @@ outstanding results.
 - Time tracking (coming soon): CS Pro Plane also includes a powerful time tracking feature, allowing teams to monitor the time spent on tasks and projects accurately.
 - Notifications (coming soon): Receive alerts for issue updates, sprint changes, and important project activity.
 
-## Installation
+## Installation Guide
 
 Setting up local environment is extremely easy and straight forward. Follow the below step and you will be ready to contribute.
 
