@@ -1,6 +1,4 @@
-# University of Belize - CI/CD Cohort
-
-#Plane App API
+# Plane App API
 **What is CS Pro Plane App?**
 
 CS Pro Plane is a versatile and comprehensive project management software built for teams that prioritize delivering exceptional customer
@@ -11,6 +9,8 @@ Its flexible features cater to various methodologies and processes, ensuring tha
 unique needs. By centralizing all project activities in one place, this app helps you stay organized, prioritize tasks effectively, and deliver
 outstanding results.
 
+
+
 ## Features
 
 - Issues: Quickly create issues and add details using a powerful rich text editor that supports file uploads. Add sub-properties and references to problems for better organization and tracking.
@@ -20,7 +20,8 @@ outstanding results.
 - Time tracking (coming soon): CS Pro Plane also includes a powerful time tracking feature, allowing teams to monitor the time spent on tasks and projects accurately.
 - Notifications (coming soon): Receive alerts for issue updates, sprint changes, and important project activity.
 
-## Installation
+
+## Windows/Linux/MAC Installation
 
 Setting up local environment is extremely easy and straight forward. Follow the below step and you will be ready to contribute.
 
@@ -30,20 +31,18 @@ Setting up local environment is extremely easy and straight forward. Follow the 
   git clone -b main https://github.com/Cyber-Square-Pro/cspro-plane-api.git
 ```
 
-2. Create and activate Virtual Environment:  
-   Create:
-
+2. Create and activate Virtuale Environment:  
+   Create:   
 ```bash
     python -m venv plane_env
 ```
 
-Activate:  
- On Windows,
-
+  Activate:    
+  On Windows,
+  
 ```bash
    cd plane_env/scripts
 ```
-
 On Linux/Mac
 
 ```bash
@@ -52,7 +51,6 @@ On Linux/Mac
 ```
 
 3. Switch to project folder using:
-
 ```bash
   cd ../../cspro-plane-api
 ```
@@ -93,14 +91,7 @@ If the above command fails to execute
 
 ## Testing endpoints using Postman
 
-Signup: http://127.0.0.1:8000/api/user/sign-up/
+Signup:  http://127.0.0.1:8000/api/user/sign-up/
 ![a8714280-0b7d-4ac2-8bf6-8366f1d397d3](https://github.com/user-attachments/assets/5d6eccad-f1aa-42df-bffa-f74a37d0830b)
 
-
-## University of Belize
-
-This project is developed for the University of Belize:
-- Built for students in Software Engineering (CMPS4131)
-- Focuses on project management and team collaboration
-- Part of the Computer Science program
-
+**SMALL CHANGES TO VIEW THE CI Pipeline Run
