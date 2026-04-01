@@ -12,6 +12,7 @@ Its flexible features cater to various methodologies and processes, ensuring tha
 unique needs. By centralizing all project activities in one place, this app helps you stay organized, prioritize tasks effectively, and deliver
 outstanding results.
 
+## UB team training.
 ## Features
 
 - Issues: Quickly create issues and add details using a powerful rich text editor that supports file uploads. Add sub-properties and references to problems for better organization and tracking.
