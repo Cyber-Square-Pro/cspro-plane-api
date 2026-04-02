@@ -1,8 +1,8 @@
 asgiref==3.8.1
 certifi==2024.2.2
-cffi==1.16.0
+cffi>=1.17.1
 charset-normalizer==3.3.2
-cryptography==42.0.5
+cryptography>=43.0.0
 defusedxml==0.8.0rc2
 Django==5.0.4
 django-cors-headers==4.3.1
@@ -25,8 +25,9 @@ requests==2.31.0
 requests-oauthlib==2.0.0
 social-auth-app-django==5.4.0
 social-auth-core==4.5.3
+psycopg2-binary>=2.9.9
 sqlparse==0.4.4
 tzdata==2024.1
-Pillow==10.2.0
+Pillow>=10.4.0
 uritemplate==4.1.1
 urllib3==2.2.1
