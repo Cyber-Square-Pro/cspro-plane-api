@@ -13,7 +13,7 @@ from api.utils import send_otp
 # -----------------------------------------------------------------
 # Frontend base URL — adjust this to match your Next.js dev/prod URL
 # -----------------------------------------------------------------
-FRONTEND_BASE_URL = getattr(settings, "FRONTEND_BASE_URL", "http://localhost:3000")
+FRONTEND_BASE_URL = getattr(settings, "FRONTEND_BASE_URL", "http://localhost:3011")
 
 
 class ForgotPasswordEndpoint(APIView):
