@@ -174,6 +174,7 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 
 JWT_SECRET = "CS-ProPlane-#@123!"
+FRONTEND_BASE_URL = os.environ.get("FRONTEND_BASE_URL", "http://localhost:3011")
 
 AUTH_PASSWORD_VALIDATORS = [
     {
