@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Verification</title>
     <style>
-        /* Example styles */
+        /*  styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f3f3f3;
@@ -44,16 +44,18 @@
         <!--logo -->
         <img src="https://th.bing.com/th/id/OIP.y7It5uZvqs0iL8v-OUwNrAHaHa?rs=1&pid=ImgDetMain" alt="Logo" class="logo">
         
-        <p style="text-align: center; font-size: 18px;">The code below is only valid for 2 minutes:</p>
-        
-        <div class="code-container">
-            {{ verification_code }}
+        <p style="text-align: center; font-size: 18px;">
+            Click the link below to reset your password:
+        </p>
+        <div style="text-align: center; margin: 20px 0;">
+            <a href="{{ reset_link }}" style="background: #007bff; color: #fff; padding: 12px 24px; border-radius: 5px; text-decoration: none; font-size: 18px;">
+                Reset Password
+            </a>
         </div>
-        
-        <p style="text-align: center;">Please copy and paste this on the screen where you requested this from.</p>
+        <p style="text-align: center;">If you did not request a password reset, you can ignore this email.</p>
     </div>
 <div>
-    <p class="recipient-info">This email was sent to {{ recipient_email }}. Please delete if you aren't the intended recipient.</p>
+    <p class="recipient-info">Cyber Square Reset Password Email. Please delete if you aren't the intended recipient.</p>
         
 </div>
 </div>
