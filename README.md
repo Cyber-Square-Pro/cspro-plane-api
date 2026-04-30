@@ -11,6 +11,7 @@ Its flexible features cater to various methodologies and processes, ensuring tha
 unique needs. By centralizing all project activities in one place, this app helps you stay organized, prioritize tasks effectively, and deliver
 outstanding results.
 
+## UB team training.
 ## Features
 
 - Issues: Quickly create issues and add details using a powerful rich text editor that supports file uploads. Add sub-properties and references to problems for better organization and tracking.
@@ -20,7 +21,7 @@ outstanding results.
 - Time tracking (coming soon): CS Pro Plane also includes a powerful time tracking feature, allowing teams to monitor the time spent on tasks and projects accurately.
 - Notifications (coming soon): Receive alerts for issue updates, sprint changes, and important project activity.
 
-## Installation
+## Installation Guide
 
 Setting up local environment is extremely easy and straight forward. Follow the below step and you will be ready to contribute.
 
