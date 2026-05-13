@@ -28,4 +28,4 @@ jobs:
           pip install pytest
 
       - name: Run Unit Tests only
-        run: pytest -v tests/test_utils.py
+        run: python -m pytest -v tests/test_utils.py
