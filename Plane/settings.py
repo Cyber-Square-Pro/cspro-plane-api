@@ -101,7 +101,7 @@ DATABASES = {
         "NAME": "csplane_dev",
         "USER": "postgres",
         "PASSWORD": "cspro123!",
-        "HOST": "13.201.60.242",
+        "HOST": "13.126.200.31",
     }
 }
 
